@@ -33,7 +33,7 @@ endpoints:
       models:
         default: [
           "llama3-70b-8192",
-        ]
+          ]
         fetch: true
       titleConvo: true
       titleModel: "llama3-70b-8192"
