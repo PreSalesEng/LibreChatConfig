@@ -10,7 +10,7 @@ endpoints:
     # deepseek
     # https://platform.deepseek.com/api_keys
     # Model list: https://platform.deepseek.com/api-docs/pricing
-    - name: "deepseek"
+    - name: "Deepseek Chat"
       apiKey: "${DEEPSEEK_API_KEY}"
       baseURL: "https://api.deepseek.com"
       models:
@@ -24,7 +24,23 @@ endpoints:
       titleModel: "deepseek-chat"
       summarize: false
       summaryModel: "deepseek-chat"
-      modelDisplayLabel: "DeepSeek"
+      modelDisplayLabel: "DeepSeek Chat"
+    # deepseek
+    # https://platform.deepseek.com/api_keys
+    # Model list: https://platform.deepseek.com/api-docs/pricing
+    - name: "Deepseek Code"
+      apiKey: "${DEEPSEEK_API_KEY}"
+      baseURL: "https://api.deepseek.com"
+      models:
+        default: [
+          "deepseek-coder",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "deepseek-coder"
+      summarize: false
+      summaryModel: "deepseek-coder"
+      modelDisplayLabel: "DeepSeek Coder"
     # groq
     # Model list: https://console.groq.com/settings/limits
     - name: "groq"
@@ -32,7 +48,7 @@ endpoints:
       baseURL: "https://api.groq.com/openai/v1/"
       models:
         default: [
-          "llama3-70b-8192",
+          "llama-3.3-70b-specdec",
           ]
         fetch: true
       titleConvo: true
