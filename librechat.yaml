@@ -31,10 +31,7 @@ endpoints:
       apiKey: "${GROQ_API_KEY}"
       baseURL: "https://api.groq.com/openai/v1/"
       models:
-        default: [
-          "llama3-70b-8192",
-          ]
-        fetch: false
+        fetch: true
       titleConvo: true
       titleModel: "llama3-70b-8192"
       modelDisplayLabel: "groq"
